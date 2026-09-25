@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-body antialiased;
+  }
+
+  ::selection {
+    background-color: rgba(212, 167, 44, 0.4);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-forest-dark;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #2D6A4F;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-6 md:px-10;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-semibold text-paper transition-colors duration-200 hover:bg-forest-light focus-visible:outline-forest-light disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-forest/20 bg-transparent px-6 py-3 text-sm font-semibold text-forest-dark transition-colors duration-200 hover:bg-forest/5 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-sm font-medium text-ink/80;
+  }
+
+  .field-input {
+    @apply w-full rounded-xl border border-ink/15 bg-white px-4 py-2.5 text-sm text-ink placeholder:text-ink/40 transition-colors duration-150 focus:border-fern focus:outline-none focus:ring-2 focus:ring-fern/20;
+  }
+
+  .card {
+    @apply rounded-2xl border border-ink/10 bg-white/70 p-6 shadow-sm shadow-forest-dark/5;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-fern;
+  }
+}
+
+/* Dedicated Non-Overlapping Floating Keyframe Animations */
+@keyframes floatTopLeft {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-8px) translateX(-4px);
+  }
+}
+
+@keyframes floatTopRight {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-8px) translateX(4px);
+  }
+}
+
+@keyframes floatBottomCenter {
+  0%, 100% {
+    transform: translateY(0px) translateX(-50%);
+  }
+  50% {
+    transform: translateY(8px) translateX(-50%);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.05);
+  }
+}
+
+.animate-card-top-left {
+  animation: floatTopLeft 5s ease-in-out infinite;
+}
+
+.animate-card-top-right {
+  animation: floatTopRight 5.5s ease-in-out 1s infinite;
+}
+
+.animate-card-bottom {
+  animation: floatBottomCenter 6s ease-in-out 0.5s infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#40704A" />
+      <stop offset="100%" stop-color="#1B4332" />
+    </linearGradient>
+    <linearGradient id="chapatiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7E5C8" />
+      <stop offset="100%" stop-color="#D4A72C" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+  <circle cx="400" cy="300" r="190" fill="#EFEAE0" stroke="#8C6E4B" stroke-width="6" />
+  <!-- Stacked Chapatis -->
+  <circle cx="380" cy="280" r="130" fill="url(#chapatiGrad)" stroke="#C27D0E" stroke-width="3" />
+  <circle cx="410" cy="310" r="130" fill="url(#chapatiGrad)" stroke="#C27D0E" stroke-width="3" opacity="0.95" />
+  <!-- Brown Toast Marks -->
+  <circle cx="390" cy="270" r="18" fill="#8C6E4B" opacity="0.6" />
+  <circle cx="430" cy="320" r="14" fill="#8C6E4B" opacity="0.6" />
+  <circle cx="370" cy="330" r="22" fill="#8C6E4B" opacity="0.5" />
+  <!-- Label Overlay -->
+  <rect x="250" y="490" width="300" height="50" rx="25" fill="#1B4332" opacity="0.95" stroke="#D4A72C" stroke-width="2" />
+  <text x="400" y="522" text-anchor="middle" fill="#FBF9F4" font-family="serif" font-size="20" font-weight="bold">Fresh Chapati &amp; Roti</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D6A4F" />
+      <stop offset="100%" stop-color="#122E22" />
+    </linearGradient>
+    <linearGradient id="dalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8C766" />
+      <stop offset="100%" stop-color="#C27D0E" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+  <circle cx="400" cy="300" r="200" fill="#FBF9F4" stroke="#40704A" stroke-width="6" />
+  <path d="M 230,300 A 160,160 0 0,1 400,140 A 160,160 0 0,1 400,460 A 160,160 0 0,1 230,300 Z" fill="#EFEAE0" />
+  <path d="M 400,140 A 160,160 0 0,1 570,300 A 160,160 0 0,1 400,460 A 160,160 0 0,1 400,140 Z" fill="url(#dalGrad)" />
+  <rect x="260" y="490" width="280" height="50" rx="25" fill="#1B4332" opacity="0.95" stroke="#D4A72C" stroke-width="2" />
+  <text x="400" y="522" text-anchor="middle" fill="#FBF9F4" font-family="serif" font-size="20" font-weight="bold">Steamed Dal &amp; Rice</text>
+</svg>

@@ -1,0 +1,92 @@
+/**
+ * Mock Donations dataset for the ShareBite Donor Module.
+ * Imports single-format local food assets from src/assets/images/food/index.js.
+ */
+import { curry, bread, dalRice, biryani } from "../assets/images/food";
+
+export const INITIAL_MOCK_DONATIONS = [
+  {
+    id: "don-01",
+    foodName: "Fresh Vegetable Meal Boxes",
+    category: "Cooked Meals",
+    quantity: "35 Boxes",
+    estimatedMeals: 35,
+    isVeg: true,
+    prepTime: "Today, 12:30 PM",
+    storageCondition: "Insulated Thermal Containers (Hot)",
+    pickupAddress: "Green Gourmet Bistro, 42 Eco Avenue, Downtown",
+    contactPhone: "+1 (555) 234-5678",
+    description: "Packed wholesome lunch boxes prepared for a corporate event. Includes mixed vegetable curry, steamed rice, and chapati. Sealed in hygienic food-grade containers.",
+    image: curry,
+    pickupAvailability: "Today between 4:00 PM - 7:00 PM",
+    status: "Accepted",
+    postedDate: "2026-08-06",
+    ngoName: "Helping Hands Shelter",
+    timeline: [
+      { step: 1, label: "Donation Posted", status: "completed", timestamp: "Today, 1:15 PM" },
+      { step: 2, label: "Awaiting NGO Acceptance", status: "completed", timestamp: "Today, 1:15 PM" },
+      { step: 3, label: "NGO Accepted", status: "completed", timestamp: "Today, 2:40 PM by Helping Hands Shelter" },
+      { step: 4, label: "Ready for Pickup", status: "current", timestamp: "Pickup window 4:00 PM - 7:00 PM" },
+      { step: 5, label: "Completed", status: "upcoming", timestamp: "Pending collection" },
+    ],
+  },
+  {
+    id: "don-02",
+    foodName: "Assorted Bakery Bread & Rolls",
+    category: "Bakery & Surplus",
+    quantity: "25 Kg",
+    estimatedMeals: 50,
+    isVeg: true,
+    prepTime: "Today, 6:00 AM",
+    storageCondition: "Room Temperature (Dry Crates)",
+    pickupAddress: "Sunnyside Artisanal Bakery, 108 Harvest Lane",
+    contactPhone: "+1 (555) 876-5432",
+    description: "Freshly baked whole wheat loaves, dinner rolls, and fruit muffins. Surplus from morning batch, perfectly fresh for consumption.",
+    image: bread,
+    pickupAvailability: "Today until 8:00 PM",
+    status: "Pending",
+    postedDate: "2026-08-06",
+    ngoName: null,
+    timeline: [
+      { step: 1, label: "Donation Posted", status: "completed", timestamp: "Today, 3:30 PM" },
+      { step: 2, label: "Awaiting NGO Acceptance", status: "current", timestamp: "Broadcasting to nearby verified NGOs" },
+      { step: 3, label: "NGO Accepted", status: "upcoming", timestamp: "Awaiting NGO claim" },
+      { step: 4, label: "Ready for Pickup", status: "upcoming", timestamp: "Pending claim" },
+      { step: 5, label: "Completed", status: "upcoming", timestamp: "Pending collection" },
+    ],
+  },
+  {
+    id: "don-03",
+    foodName: "Steamed Dal & Basmati Rice",
+    category: "Cooked Meals",
+    quantity: "60 Servings",
+    estimatedMeals: 60,
+    isVeg: true,
+    prepTime: "Yesterday, 7:00 PM",
+    storageCondition: "Refrigerated (Chilled)",
+    pickupAddress: "Heritage Banquet Center, 15 Community Way",
+    contactPhone: "+1 (555) 345-6789",
+    description: "Large batch of aromatic basmati rice and yellow lentil soup prepared for a dinner reception. Kept refrigerated in food-grade steel vessels.",
+    image: dalRice,
+    pickupAvailability: "Completed",
+    status: "Completed",
+    postedDate: "2026-08-05",
+    ngoName: "City Food Bank Network",
+    timeline: [
+      { step: 1, label: "Donation Posted", status: "completed", timestamp: "Yesterday, 8:00 PM" },
+      { step: 2, label: "Awaiting NGO Acceptance", status: "completed", timestamp: "Yesterday, 8:05 PM" },
+      { step: 3, label: "NGO Accepted", status: "completed", timestamp: "Yesterday, 8:30 PM by City Food Bank" },
+      { step: 4, label: "Ready for Pickup", status: "completed", timestamp: "Yesterday, 9:15 PM" },
+      { step: 5, label: "Completed", status: "completed", timestamp: "Yesterday, 10:00 PM — Distributed to 60 individuals" },
+    ],
+  },
+];
+
+export const MOCK_DONOR_PROFILE = {
+  fullName: "Jane Doe",
+  organizationName: "Green Gourmet Catering",
+  email: "donor@example.com",
+  phoneNumber: "+1 (555) 234-5678",
+  address: "42 Eco Avenue, Suite 100, Downtown",
+  avatarUrl: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%231B4332'/><circle cx='50' cy='40' r='20' fill='%23D4A72C'/><path d='M20 90 C20 70 80 70 80 90 Z' fill='%23D4A72C'/></svg>",
+};

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#40704A" />
+      <stop offset="100%" stop-color="#1B4332" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+  <!-- Bread Loaf -->
+  <path d="M 240,240 C 240,160 560,160 560,240 L 540,360 C 540,380 260,380 260,360 Z" fill="#D4A72C" stroke="#8C6E4B" stroke-width="6" />
+  <!-- Slits -->
+  <path d="M 310,220 Q 340,290 330,340" stroke="#8C6E4B" stroke-width="6" stroke-linecap="round" fill="none" />
+  <path d="M 390,210 Q 420,290 410,340" stroke="#8C6E4B" stroke-width="6" stroke-linecap="round" fill="none" />
+  <path d="M 470,220 Q 500,290 490,340" stroke="#8C6E4B" stroke-width="6" stroke-linecap="round" fill="none" />
+  <!-- Muffins -->
+  <circle cx="240" cy="380" r="35" fill="#E8C766" stroke="#8C6E4B" stroke-width="3" />
+  <circle cx="560" cy="380" r="35" fill="#E8C766" stroke="#8C6E4B" stroke-width="3" />
+  <!-- Label Overlay -->
+  <rect x="250" y="490" width="300" height="50" rx="25" fill="#1B4332" opacity="0.95" stroke="#D4A72C" stroke-width="2" />
+  <text x="400" y="522" text-anchor="middle" fill="#FBF9F4" font-family="serif" font-size="20" font-weight="bold">Fresh Bakery Bread</text>
+</svg>
